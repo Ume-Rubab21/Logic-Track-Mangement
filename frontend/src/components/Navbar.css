@@ -1,0 +1,150 @@
+.navbar {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #003d91, #ff7a18);
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 122, 24, 0.3);
+}
+
+.logo-text h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #061a35;
+}
+
+.logo-text h2 span {
+  color: #ff7a18;
+}
+
+.logo-text p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #334966;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  background: #eef2f8;
+  padding: 10px 14px;
+  border-radius: 100px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #061a35;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  background: white;
+  color: #004aad;
+  box-shadow: 0 8px 20px rgba(0, 74, 173, 0.14);
+}
+
+.navbar-links a.active-link {
+  background: #004aad;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 74, 173, 0.25);
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.login-button,
+.start-button,
+.logout-button {
+  border: none;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button {
+  background: white;
+  color: #004aad;
+  border: 2px solid #004aad;
+}
+
+.login-button:hover {
+  background: #004aad;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.start-button {
+  background: linear-gradient(135deg, #004aad, #0066d6);
+  color: white;
+  box-shadow: 0 12px 25px rgba(0, 74, 173, 0.25);
+}
+
+.start-button:hover {
+  background: linear-gradient(135deg, #ff7a18, #ff9d3b);
+  transform: translateY(-3px);
+}
+
+.logout-button {
+  background: #ff7a18;
+  color: white;
+}
+
+.logout-button:hover {
+  background: #004aad;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 22px;
+  }
+
+  .navbar-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
